@@ -26,3 +26,12 @@ include_directories(${GTK_INCLUDE_DIRS} ${WEBKIT2_INCLUDE_DIRS})
 configure_file(naviguesser.glade naviguesser.glade COPYONLY)
 add_subdirectory(icons)
 
+set(CPACK_PACKAGE_NAME "naviguesser")
+set(CPACK_PACKAGE_VENDOR "badquanta")
+set(CPACK_PACKAGE_VERSION "0.0.1")
+set(CPACK_PACKAGE_CONTACT "BadQuanta badquanta@gmail.com")
+set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Naviguesser")
+set(CPACK_DEBIAN_PACKAGE_DEPENDS "libgtk-3-0, libwebkit2gtk-4.0-37")
+set(CPACK_GENERATOR "DEB;ZIP;TGZ")
+
+include(CPack)

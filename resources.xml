@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+    <gresource prefix="/org/nuscape/ui/">
+        <file>icons/Back.png</file>
+        <file>icons/Find.png</file>
+        <file>icons/Forward.png</file>
+        <file>icons/Home.png</file>
+        <file>icons/Images.png</file>                
+        <file>icons/Logo.png</file>
+        <file>icons/logo-animated.gif</file>
+        <file>icons/logo-animated2.gif</file>
+        <file>icons/Open.png</file>
+        <file>icons/Print.png</file>
+        <file>icons/Reload.png</file>
+        <file>icons/Stop.png</file>
+        <file>nuscape.glade</file>
+        <file>naviguesser.glade</file>
+    </gresource>
+</gresources>

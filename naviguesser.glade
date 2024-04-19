@@ -261,11 +261,6 @@ Author: BadQuanta@gmail.com
     <property name="model">UrlBarCompletionStore</property>
     <property name="text-column">0</property>
   </object>
-  <object class="WebKitSettings" type-func="webkit_settings_get_type" id="WebKitSettings">
-    <property name="enable-xss-auditor">False</property>
-    <property name="enable-developer-extras">True</property>
-    <property name="user-agent">Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15</property>
-  </object>
   <object class="GtkApplicationWindow" id="Naviguesser">
     <property name="can-focus">False</property>
     <property name="title" translatable="yes">Nuscape Naviguess</property>
@@ -1026,25 +1021,13 @@ Author: BadQuanta@gmail.com
           </packing>
         </child>
         <child>
-          <object class="GtkFrame">
+          <object class="GtkFrame" id="NavViewFrame">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="label-xalign">0</property>
-            <property name="shadow-type">in</property>
+            <property name="shadow-type">etched-out</property>
             <child>
-              <object class="WebKitWebView" type-func="webkit_web_view_get_type" id="NavView">
-                <property name="width-request">320</property>
-                <property name="height-request">200</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="hexpand">True</property>
-                <property name="vexpand">True</property>
-                <property name="border-width">4</property>
-                <property name="settings">WebKitSettings</property>
-                <child>
-                  <placeholder/>
-                </child>
-              </object>
+              <placeholder/>
             </child>
           </object>
           <packing>
@@ -1079,5 +1062,10 @@ Author: BadQuanta@gmail.com
         </child>
       </object>
     </child>
+  </object>
+  <object class="WebKitSettings" type-func="webkit_settings_get_type" id="WebKitSettings">
+    <property name="enable-xss-auditor">False</property>
+    <property name="enable-developer-extras">True</property>
+    <property name="user-agent">Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15</property>
   </object>
 </interface>

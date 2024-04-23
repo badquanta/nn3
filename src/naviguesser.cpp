@@ -204,6 +204,7 @@ Naviguesser::Naviguesser(Private, WebKitWebView *related, guint32 id) : id{id}
     monitorProcessId = g_timeout_add(1000, (GSourceFunc)monitor_webkit_process, this);
     // Get the main window
     window = GTK_APPLICATION_WINDOW(gtk_builder_get_object(builder, "Naviguesser"));
+    g_object_set(window, "application", Nuscape::getInstance()->app, NULL);
     g_signal_connect(window, "destroy", G_CALLBACK(on_window_closed), this);
 
     // Frame that contains the WebKitView

@@ -25,4 +25,5 @@ public:
 
     GtkBuilder* builder;
     WebKitSettings* settings;
+    GtkApplication* app;
 };

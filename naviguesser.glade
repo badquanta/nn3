@@ -289,12 +289,12 @@ Author: BadQuanta@gmail.com
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImageMenuItem">
-                        <property name="label">gtk-new</property>
+                      <object class="GtkMenuItem">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
+                        <property name="action-name">app.new-browser-window</property>
+                        <property name="label" translatable="yes">_New Web Browser</property>
                         <property name="use-underline">True</property>
-                        <property name="use-stock">True</property>
                       </object>
                     </child>
                     <child>
@@ -302,6 +302,7 @@ Author: BadQuanta@gmail.com
                         <property name="label">gtk-open</property>
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
+                        <property name="action-name">app.open</property>
                         <property name="use-underline">True</property>
                         <property name="use-stock">True</property>
                       </object>
@@ -311,6 +312,7 @@ Author: BadQuanta@gmail.com
                         <property name="label">gtk-save</property>
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
+                        <property name="action-name">app.save</property>
                         <property name="use-underline">True</property>
                         <property name="use-stock">True</property>
                       </object>
@@ -320,6 +322,7 @@ Author: BadQuanta@gmail.com
                         <property name="label">gtk-save-as</property>
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
+                        <property name="action-name">app.save-as</property>
                         <property name="use-underline">True</property>
                         <property name="use-stock">True</property>
                       </object>
@@ -331,13 +334,13 @@ Author: BadQuanta@gmail.com
                       </object>
                     </child>
                     <child>
-                      <object class="GtkImageMenuItem">
-                        <property name="label">gtk-quit</property>
-                        <property name="related-action">ActionExit</property>
+                      <object class="GtkMenuItem">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
+                        <property name="tooltip-text" translatable="yes">Close all windows and quit application.</property>
+                        <property name="action-name">app.quit</property>
+                        <property name="label" translatable="yes">Exit nuscape</property>
                         <property name="use-underline">True</property>
-                        <property name="use-stock">True</property>
                       </object>
                     </child>
                   </object>
@@ -713,7 +716,40 @@ Author: BadQuanta@gmail.com
               <object class="GtkSeparatorToolItem">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="draw">False</property>
+                <property name="is-important">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="homogeneous">False</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkSeparatorToolItem">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="is-important">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="homogeneous">False</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkSeparatorToolItem">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="is-important">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="homogeneous">False</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkSeparatorToolItem">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="is-important">True</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -801,7 +837,40 @@ Author: BadQuanta@gmail.com
               <object class="GtkSeparatorToolItem">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="draw">False</property>
+                <property name="is-important">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="homogeneous">False</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkSeparatorToolItem">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="is-important">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="homogeneous">False</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkSeparatorToolItem">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="is-important">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="homogeneous">False</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkSeparatorToolItem">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="is-important">True</property>
               </object>
               <packing>
                 <property name="expand">False</property>
